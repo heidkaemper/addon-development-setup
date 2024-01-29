@@ -1,0 +1,17 @@
+{
+    "repositories": [
+        {
+            "type": "path",
+            "url": "plugins/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
+        }
+    ],
+    "minimum-stability": "dev"
+}
