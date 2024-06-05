@@ -7,5 +7,9 @@
                 "symlink": true
             }
         }
-    ]
+    ],
+    "require": {
+        ...
+        "symfony/filesystem": "*"
+    }
 }
