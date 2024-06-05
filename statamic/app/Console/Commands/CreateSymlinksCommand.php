@@ -27,12 +27,12 @@ class CreateSymlinksCommand extends Command
             if (is_link($public_vendor)) {
                 unlink($public_vendor);
             }
-    
+
             if (is_dir($public_vendor)) {
                 File::deleteDirectory($public_vendor);
             }
-    
-            symlink($source, $public_vendor);
+
+            $this->laravel->make('files')->relativeLink($source, $public_vendor);
         }
 
         $this->info('Symlinks created');
